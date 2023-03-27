@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Statistics = ({ elements, title = 'UPLOAD STATS' }) => {
   return (
     <section class="statistics">
@@ -13,4 +15,9 @@ export const Statistics = ({ elements, title = 'UPLOAD STATS' }) => {
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  elements: PropTypes.object.isRequired,
+  title: PropTypes.string,
 };
