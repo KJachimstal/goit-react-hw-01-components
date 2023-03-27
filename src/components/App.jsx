@@ -1,3 +1,6 @@
+import { Profile } from 'components/Profile';
+import user from '../fixed/user.json';
+
 export const App = () => {
   return (
     <div
@@ -9,6 +12,8 @@ export const App = () => {
         fontSize: 40,
         color: '#010101',
       }}
-    ></div>
+    >
+      <Profile {...user} />
+    </div>
   );
 };
