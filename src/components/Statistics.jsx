@@ -6,8 +6,8 @@ export const Statistics = ({ elements, title = 'UPLOAD STATS' }) => {
       <ul class="stat-list">
         {elements.map(({ label, percentage }) => (
           <li class="item">
-            <span class="label">{label}</span>
-            <span class="percentage">{percentage}</span>
+            <span class="item-label">{label}</span>
+            <span class="percentage">{percentage}%</span>
           </li>
         ))}
       </ul>
