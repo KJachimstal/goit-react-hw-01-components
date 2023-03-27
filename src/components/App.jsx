@@ -1,13 +1,15 @@
 import { Profile } from 'components/Profile';
 import { Statistics } from './Statistics';
+import { FriendList } from './FriendList';
 import user from '../fixed/user.json';
 import data from '../fixed/data.json';
+import friends from '../fixed/friends.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        marginTop: '40px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -18,6 +20,7 @@ export const App = () => {
     >
       <Profile {...user} />
       <Statistics elements={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
