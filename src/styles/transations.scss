@@ -1,0 +1,26 @@
+table {
+  text-align: center;
+  width: 1000px;
+}
+table td,
+table th {
+  border: 1px solid #e1e1e1;
+}
+table tr:nth-child(even) {
+  background: #ecf1f3;
+}
+table thead {
+  background: #00bcd5;
+}
+table thead th {
+  font-size: 30px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+table tbody td {
+  font-size: 20px;
+  padding: 5px;
+  text-transform: capitalize;
+}

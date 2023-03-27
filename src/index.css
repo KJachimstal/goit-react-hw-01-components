@@ -1,6 +1,7 @@
 @import './styles/profile.scss';
 @import './styles/statistics.scss';
 @import './styles/friend.scss';
+@import './styles/transations.scss';
 
 body {
   margin: 0;

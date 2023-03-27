@@ -20,9 +20,9 @@ export const App = () => {
         flexDirection: 'column',
       }}
     >
-      {/* <Profile {...user} /> */}
-      {/* <Statistics elements={data} /> */}
-      {/* <FriendList friends={friends} /> */}
+      <Profile {...user} />
+      <Statistics elements={data} />
+      <FriendList friends={friends} />
       <Transactions transactions={transactions} />
     </div>
   );
