@@ -2,22 +2,22 @@ import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul class="friend-list">
-      {friends.map(({ avatar, name, isOnline }) => {
+    <ul className="friend-list">
+      {friends.map(({ avatar, name, isOnline, id }) => {
         return (
-          <li class="friend-item">
+          <li className="friend-item" key={id}>
             {isOnline ? (
-              <span class="friend-status online"></span>
+              <span className="friend-status online"></span>
             ) : (
-              <span class="friend-status offline"></span>
+              <span className="friend-status offline"></span>
             )}
             <img
-              class="friend-avatar"
+              className="friend-avatar"
               src={avatar}
               alt="User avatar"
               width="48"
             />
-            <p class="friend-name">{name}</p>
+            <p className="friend-name">{name}</p>
           </li>
         );
       })}
