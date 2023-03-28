@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 
 export const Statistics = ({ elements, title = 'UPLOAD STATS' }) => {
   return (
-    <section class="statistics">
-      <h2 class="title">{title}</h2>
+    <section className="statistics">
+      <h2 className="title">{title}</h2>
 
-      <ul class="stat-list">
-        {elements.map(({ label, percentage }) => (
-          <li class="item">
-            <span class="item-label">{label}</span>
-            <span class="percentage">{percentage}%</span>
+      <ul className="stat-list">
+        {elements.map(({ label, percentage, id }) => (
+          <li className="item" key={id}>
+            <span className="item-label">{label}</span>
+            <span className="percentage">{percentage}%</span>
           </li>
         ))}
       </ul>
@@ -18,6 +18,5 @@ export const Statistics = ({ elements, title = 'UPLOAD STATS' }) => {
 };
 
 Statistics.propTypes = {
-  elements: PropTypes.object.isRequired,
-  title: PropTypes.string,
+  elements: PropTypes.array.isRequired,
 };
